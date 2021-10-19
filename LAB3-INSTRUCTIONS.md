@@ -46,10 +46,9 @@ Students should become familiar with the following:
 
 This lab will require all work be done in AWS.  Please deploy the below instance and work inside the lab.
 
-* Click [this cloudformation link](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg3400Lab1&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg3400-mek.yml)
-  to deploy your stack
+* [CEG 3400 Lab 3 AWS link](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg3400Lab&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg3400-mek.yml)
 * Identify the IP address of the running EC2 instance created [in the EC2
-  page](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1)
+  page](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:)
 
 ---
 
