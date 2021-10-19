@@ -13,19 +13,32 @@ Table of contents:
 
 ---
 
-#### Background
+#### Background and Objectives
 
-Learn about some basic (and more advanced) network manipulation tools.
+In this lab you will learn about some basic (and more advanced) network manipulation 
+tools by catpuring and creating packets, and exploring a well documented type of 
+attack.
 
----
-
-#### Objectives
+This lab assumes you have a basic understanding of networking, IP addresses, ports
+and packets (from CEG-2350 and what was covered in class).
 
 Students should become familiar with the following:
 
 * creating, sending, and capturing packets with Scapy
 * abusing netcat and pipes
 * configuring iptables (firewalls)
+
+---
+
+#### Rubrik
+| Item | # Points|
+| --- | --- |
+| 10 commits | 10 |
+| Good markdown style | 20 |
+| Task 1 | 30 |
+| Task 2 | 30 | 
+| Task 3 | 20 |
+| Task 4 | 30 |
 
 ---
 
@@ -36,16 +49,14 @@ This lab will require all work be done in AWS.  Please deploy the below instance
 * Click [this cloudformation link](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg3400Lab1&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg3400-mek.yml)
   to deploy your stack
 * Identify the IP address of the running EC2 instance created [in the EC2
-  page](https://console.aws.amazon.com/ec2/v2/home?region=us-east-
-* Connect with the following string: `ssh -i /path/to/keyfile ubuntu@<IP
-  ADDRESS>` 
+  page](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1)
 
 ---
 
 ### Task 1: Crafting Packets
 
 Famliarize yourself with scapy (covered in class) by creating a DNS request for `xkcd.com` and sending
-it to `8.8.8.8`.  Capture the response.
+it to `8.8.8.8` (or any DNS server that will respond to you).  Capture the response.
 
 Answer all questions in `README.md`
 

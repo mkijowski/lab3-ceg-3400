@@ -16,6 +16,11 @@ Answer the following in this file:
 
 ```
 
+* Paste the output of your `response.show` in the code block below:
+
+```
+```
+
 * What does `8.8.8.8` say the IP Address of `xkcd.com` is?
 
 ---
