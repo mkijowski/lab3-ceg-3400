@@ -1,69 +1,96 @@
-# Lab 3 : CEG 3400 Intro to Cyber Security
+## Lab 3 : CEG 3400
 
-## Name:
+### Authentication and Permissions
 
-### Task 1: Crafting Packets
+#### Name: <yourname>
 
-**Reminder Deliverable:** Your python scapy file `packet-craft.py`
-
-Answer the following in this file:
-
-* What is the default port for DNS?
-* Paste the output of your ***Python*** `packet.show()` command below 
-  (in the code block):
-
-```
-
-```
-
-* Paste the output of your `response.show` in the code block below:
-
-```
-```
-
-* What does `8.8.8.8` say the IP Address of `xkcd.com` is?
+Names and usernames of teammates:
+* <teammate 1 name>, username
+* <teammate 2 name>, username
 
 ---
 
-### Task 2: A Shell Game 
+### Task 1 - Users
 
-Answer the following:
-
-* What port does the provided command open?
-* What is a Bind Shell and a Reverse Shell (include the links you used in 
-  your research!)
-* Which type of shell does this command open?
-* What/whose permissions does this shell provide?
-* Give evidence of your malicious shell running a command:
+* Type your simple password here: 
+* Upload your `id_rsa.pub` to this repo (to the root directory as `id_rsa.pub`)
+* Encrypt your password with matthew.kijowski@wright.edu as the `--recipient` and upload it to `password.gpg`
+* Paste the commands used to encrypt your password to your teammates:
 
 ```
-evidence
+gpg ...
+```
+
+* paste the relevant lines in `/etc/passwd` and `/etc/group` below that show you created your user
+
+```
+/etc/passwd
+...
+
+/etc/group
+...
+
 ```
 
 ---
 
-### Task 3: Iptables
+### Task 2 - Permissions
 
-**Reminder Deliverable:** Your iptables file created with `iptables-save`
+* What were the permissions on each of the users' home directories?
+  
 
-Please name your file `task3.rules`
+```
+command and output
+```
 
-* How did you verify that this worked?
+* What command did you use to change the permissions (full command used)?
+
+```
+command
+```
+
+* What are the permissions on `/etc/shadow`?
+
+```
+command and output
+```
+
+* Why does `/etc/shadow` have the permissions that it does?
+* How did you accomplish this task?  IF you updated any of the files above
+  (`/etc/passwd` or `/etc/group`) paste the relevant lines here.  
+  
+  ```
+  output of ls -lah /home
+  also paste any file names and changed lines here
+  ```
+  Be thorough in your response, explain how given the above output and 
+  a listing of commands run I can know for certain that your user can 
+  access other users' files.
 
 ---
 
-### Task 4: Any Port in a Storm
+### Task 3 - SetUID
 
-**Reminder Deliverable:** Your iptables file created with `iptables-save`
+* Make sure your uncompiled and compiled code is in `/code`
+* What were the final permissions on your executable?
 
-Please name your file `task4.rules`
+```
 
+```
 
-Answer the following:
+* What command did you use to setUID?
 
-* Did you lock yourself out?
-  * If no: How did you verify that this worked?  
-  * If yes: triage, what did you do wrong?  How would you fix it (paste a 
-    new attempt at your `task4.rules` right here and try to fix your error)
+```
 
+```
+
+* Copy paste each verification you did for the setuid on your teammates'
+  systems into different code blocks below.
+
+  ```
+test
+  ```
+  ```
+  teammate 2
+  ```
 
