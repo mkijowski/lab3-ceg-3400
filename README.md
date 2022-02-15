@@ -18,7 +18,7 @@ Names and usernames of teammates:
 * Paste the commands used to encrypt your password to your teammates:
 
 ```
-gpg ...
+gpg <the rest>
 ```
 
 * paste the relevant lines in `/etc/passwd` and `/etc/group` below that show you created your user
@@ -78,6 +78,12 @@ command and output
 
 ```
 
+* What user does the executable run as (use `whoami`)?
+
+```
+./a.out whoami output
+```
+
 * What command did you use to setUID?
 
 ```
@@ -87,10 +93,11 @@ command and output
 * Copy paste each verification you did for the setuid on your teammates'
   systems into different code blocks below.
 
-  ```
-test
-  ```
-  ```
-  teammate 2
-  ```
+```
+teammate 1 tests
+```
+
+```
+teammate 2 tests
+```
 
