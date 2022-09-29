@@ -8,7 +8,7 @@ Table of contents:
 * [Preparation](LAB3-INSTRUCTIONS.md#preparation)
 * [Task 1: Account Setup](LAB3-INSTRUCTIONS.md#task-1---users)
 * [Task 2: Permissions Issues](LAB3-INSTRUCTIONS.md#task-2---permissions-issues)
-* [Task 3: Advanced Permissions Issues](LAB3-INSTRUCTIONS.md#task-3---hashcat)
+* [Task 3: Advanced Permissions Issues](LAB3-INSTRUCTIONS.md#task-3---setuid)
 
 ---
 
@@ -16,10 +16,13 @@ Table of contents:
 
 Setting up accounts on a system can be a difficult task to do securely.  
 In part one students will work in groups of 3 to setup multiple users on your 
-WSL environment.  Students will extract information from this virtual machine 
+***AWS*** environment.  Students will extract information from this virtual machine 
 and document the process.
 
 Parts 2 and 3 will involve checking and changing file permissions.
+
+* Instructions for using AWS can be found [in the class repository here.](https://github.com/mkijowski/ceg3400-fall/blob/master/AWS_GUIDE.md)
+* After signing into the AWS console via AWS Academy use [this link to provision a Ubuntu system.](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=ceg3400Lab&templateURL=https:%2F%2Fwsu-cecs-cf-templates.s3.us-east-2.amazonaws.com%2Fcourse-templates%2Fceg3400-mek.yml)
 
 ---
 
@@ -38,7 +41,7 @@ Students should become familiar with the following:
 ### Task 1 - Users
 
 Intended to be done in a team of 2-3, but a single person *could* perform
-all tasks.  ***All work should be done by each student***
+all tasks.  ***Each student should make at least 1 commit to their team repository***
 
 * create a simple / insecure password you can share 
   (one or two words and numbers, no padding or substitution)
@@ -81,4 +84,5 @@ Some useful commands:
 * `g++ <filename>`
 * `man whoami`
 * `./a.out whoami`
+
 
