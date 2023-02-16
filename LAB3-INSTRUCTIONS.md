@@ -85,4 +85,11 @@ Some useful commands:
 * `man whoami`
 * `./a.out whoami`
 
+### EC Task - What happens if?
+
+Write down three questions that start with "What happens if...?" related to one or multiple of the setuid example programs. Then, do that and answer the question.
+
+Points will not be awarded to trivial questions.  Think of this as actual Computer *Science* (hah), write down your hypothesis (what if question) and what you think the outcome will be, then try to answer that **beforfe** you perform your experiment.
+
+Then, outline your experiment (in writing) and tell me what happened!  That's science.
 
